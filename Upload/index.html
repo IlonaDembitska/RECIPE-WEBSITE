@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Додавання рецепту</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <div class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="content">
+            <div class="left">
+                <label class="upload-box" onclick="document.getElementById('file-input').click()">
+                    <div class="upload-icon">⬆</div>
+                    <p>drop your image here, or <span class="browse">browse</span></p>
+                    <input type="file" id="file-input" style="display: none;">
+                    <input type="text" class="recipe-name" placeholder="ENTER A RECIPE NAME…">
+                </label>
+            
+            </div>
+            <div class="right">
+                <textarea class="description" placeholder="description"></textarea>
+                <div class="ingredients">
+                    <span>ingredients</span> <span class="add">+</span>
+                </div>
+                <div class="dropdowns">
+                    <select>
+                        <option>category</option>
+                    </select>
+                    <select>
+                        <option>subcategory</option>
+                    </select>
+                </div>
+                <button class="add-btn">add</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

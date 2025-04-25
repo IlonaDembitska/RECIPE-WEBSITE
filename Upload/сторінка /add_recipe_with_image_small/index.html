@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Recipe With Image</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="recipe-form">
+  <div class="upload-box" onclick="document.getElementById('imageInput').click()">
+    <input type="file" id="imageInput" accept="image/*" hidden />
+    <div id="uploadContent">
+      <div class="upload-icon">⬆</div>
+      <p>drop your image here, or <span class="browse">browse</span></p>
+    </div>
+    <input type="text" class="recipe-name" placeholder="ENTER A RECIPE NAME..." />
+  </div>
+
+  <div class="form-info">
+    <label>Description</label>
+    <textarea placeholder="l........"></textarea>
+
+    <div class="ingredients">
+      <label>Ingredients</label>
+      <button class="plus-button">+</button>
+    </div>
+
+    <div class="dropdowns">
+      <select><option>category</option></select>
+      <select><option>subcategory</option></select>
+    </div>
+
+    <button class="add-button">add</button>
+  </div>
+
+  <div class="close">✕</div>
+</div>
+
+<script>
+  const imageInput = document.getElementById('imageInput');
+  const uploadContent = document.getElementById('uploadContent');
+  const uploadBox = document.querySelector('.upload-box');
+
+  imageInput.addEventListener('change', function(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      const img = document.createElement('img');
+      img.src = e.target.result;
+      img.classList.add('preview-image');
+      uploadBox.insertBefore(img, uploadContent);
+      uploadContent.style.display = 'none';
+    };
+    reader.readAsDataURL(file);
+  });
+</script>
+
+</body>
+</html>

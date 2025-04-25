@@ -1,0 +1,148 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF9F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    margin: 0;
+}
+
+.modal {
+    background: #FFF9F2;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px rgba(60, 47, 47, 0.1);
+    width: 700px;
+    height: 350px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    height: 100%;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.upload-box {
+    width: 90%;
+    height: 300px;
+    background-color: #F6ECE1;
+    border: 2px dashed #F6ECE1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    color: #9c7a6a;
+    font-size: 14px;
+    margin-bottom: 10px;
+    box-shadow: 0 10px 15px rgba(145, 144, 144, 0.1);
+}
+
+.upload-icon {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.browse {
+    color: #FF5C39;
+}
+
+.recipe-name {
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 0,5px rgba(145, 144, 144, 0.1);
+    background: none;
+    font-size: 12px;
+    text-align: left;
+    outline: none;
+    border-bottom: 2px solid #F6ECE1;
+}
+
+.right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.description {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: none;
+    font-size: 14px;
+    resize: none;
+    border-bottom: 2px solid #F6ECE1;
+    outline: none;
+}
+
+.ingredients {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    border-bottom: 2px solid #F6ECE1;
+}
+
+.add {
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    border-bottom: 2px solid #F6ECE1;
+}
+
+.dropdowns {
+    display: flex;
+    gap: 20px;
+}
+
+select {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    background: none;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 2px solid #F6ECE1;
+}
+
+.add-btn {
+    background: #f3eadf;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: flex-start;
+}
+   
+
+
+.add-btn:hover {
+    background: #e0d2c4;
+   
+}
