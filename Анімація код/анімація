@@ -1,0 +1,43 @@
+<img src="фото.треба.png" id="boat">
+
+<style>
+#boat {
+  cursor: pointer;
+  transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+}
+
+.move {
+  transform: translateX(300px);
+  opacity: 0;
+}
+</style>
+<script>
+  boat.onclick = () => boat.classList.add('move');
+</script>
+змінюється по колу 
+
+
+2 анімація 
+
+let start = Date.now(); // зберігаємо час початку
+
+let timer = setInterval(function() {
+  // скільки часу пройшло від початку?
+  let timePassed = Date.now() - start;
+
+  if (timePassed >= 2000) {
+    clearInterval(timer); // завершуємо анімацію через 2 секунди
+    return;
+  }
+
+  // малюємо анімацію в момент часу timePassed
+  draw(timePassed);
+
+}, 20);
+
+// коли timePassed змінюється від 0 до 2000
+// left отримує значення від 0px до 400px
+function draw(timePassed) {
+  train.style.left = timePassed / 5 + 'px';
+}
+може перемикатись з одної фотки на іншу  
