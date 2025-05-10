@@ -1,0 +1,127 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdfaf6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+
+.modal {
+    background: #fefaf5;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    display: flex;
+    position: relative;
+  
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+  
+}
+
+.content {
+    display: flex;
+    width: 100%;
+}
+
+.left {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+   
+}
+
+.recipe-name {
+    position: absolute;
+    bottom: 8px;
+    left: 15px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+
+.right {
+    width: 55%;
+    padding: 20px;
+    
+}
+
+.section-title {
+    font-size: 14px;
+    color: #FF5C39;
+    margin-bottom: 5px;
+    text-transform: lowercase;
+    border-bottom: 2px solid #F6ECE1;
+}
+
+.description-text {
+    font-size: 14px;
+    color: black;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    
+}
+
+.ingredients-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    
+}
+
+.dropdowns {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: black;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #F6ECE1;
+  
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+   
+}
+
+.change {
+    background: #f3eadf;
+    color: black;
+}
+
+.delete {
+    background: #FF5C39;
+    color: white;
+}
